@@ -48,17 +48,46 @@ module.exports = function(grunt) {
       // options: {
       //   // cwd: '<%= config.app %>/images/sprites/'
       // },
+      // options: {
+      //   algorithm: 'top-down'
+      // },
 
       all: {
         src: '<%= config.app %>/images/*.png',
         dest: '<%= config.dist %>/images/spritesheet.png',
-        destCss: '<%= config.dist %>/styles/sprites.css'
+        destCss: '<%= config.dist %>/styles/sprites.css',
+        algorithm: 'binary-tree',
+        //每个拼接图之间的间隔
+        padding: 50
+          //重写css 的class名称
+          // cssVarMap: function(sprite) {
+          //   sprite.name = 'sprite_' + sprite.name;
+          //   // console.log(sprite.name);
+          // }
       },
       home: {
         src: '<%= config.app %>/images/sprites/home/*.png',
         dest: '<%= config.dist %>/images/sprites/home/spritesheet.png',
         destCss: '<%= config.dist %>/styles/home/sprites/sprites.css'
       }
+    },
+    clean: {
+      dist: {
+        files: [{
+          dot: true,
+          src: [
+            '.tmp',
+            '<%= config.dist %>/*',
+            '!<%= config.dist %>/.git*'
+          ]
+        }]
+      },
+      server: '.tmp'
     }
   });
+
+  grunt.registerTask('imgsprite', [
+    'clean',
+    'sprite'
+  ]);
 };

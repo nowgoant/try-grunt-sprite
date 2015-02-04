@@ -1,12 +1,13 @@
  try-grunt-sprite
 ----
  **setp1**
-   npm install
+   - npm install
    
+
  **setp2**
-    grunt sprite
-    
-    ![ex][1]
+  - grunt sprite
+ 
+  ![ex][1]
 
 
 

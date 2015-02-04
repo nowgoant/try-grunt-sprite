@@ -6,5 +6,12 @@
  **setp2**
     grunt sprite
     
-    
-https://raw.githubusercontent.com/nowgoant/try-grunt-sprite/master/app/images/ex.png
+    ![ex][1]
+
+
+
+
+
+
+
+[1]: https://raw.githubusercontent.com/nowgoant/try-grunt-sprite/master/app/images/ex.png

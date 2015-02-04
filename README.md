@@ -1,7 +1,7 @@
  try-grunt-sprite
 ----
  **Setp1**
-   - $ npm install
+  - $ npm install
 
  **Setp2**
   - $ grunt sprite

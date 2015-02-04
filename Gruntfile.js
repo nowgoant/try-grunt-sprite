@@ -9,8 +9,8 @@ module.exports = function(grunt) {
 
   // Configurable paths
   var config = {
-    app: 'app',
-    dist: 'dist'
+    app: 'app/sprites',
+    dist: 'app/sprites'
   };
 
   grunt.initConfig({
@@ -52,10 +52,10 @@ module.exports = function(grunt) {
       //   algorithm: 'top-down'
       // },
 
-      all: {
-        src: '<%= config.app %>/images/*.png',
-        dest: '<%= config.dist %>/images/spritesheet.png',
-        destCss: '<%= config.dist %>/styles/sprites.css',
+      home: {
+        src: '<%= config.app %>/home/*.png',
+        dest: '<%= config.dist %>/home-ssh.png',
+        destCss: '<%= config.dist %>/home-ssh.css',
         algorithm: 'binary-tree',
         //每个拼接图之间的间隔
         padding: 50
@@ -65,10 +65,10 @@ module.exports = function(grunt) {
           //   // console.log(sprite.name);
           // }
       },
-      home: {
-        src: '<%= config.app %>/images/sprites/home/*.png',
-        dest: '<%= config.dist %>/images/sprites/home/spritesheet.png',
-        destCss: '<%= config.dist %>/styles/home/sprites/sprites.css'
+      home2: {
+        src: '<%= config.app %>/home2/*.png',
+        dest: '<%= config.dist %>/home2-ssh.png',
+        destCss: '<%= config.dist %>/home2-ssh.css'
       }
     },
     clean: {
@@ -77,7 +77,8 @@ module.exports = function(grunt) {
           dot: true,
           src: [
             '.tmp',
-            '<%= config.dist %>/*',
+            '<%= config.dist %>/*.css',
+            '<%= config.dist %>/*.png',
             '!<%= config.dist %>/.git*'
           ]
         }]

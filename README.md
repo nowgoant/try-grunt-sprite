@@ -14,4 +14,4 @@
 
 
 
-[1]: https://raw.githubusercontent.com/nowgoant/try-grunt-sprite/master/app/images/ex.png
+[1]: https://github.com/nowgoant/try-grunt-sprite/blob/master/app/sprites/home2/ex.png

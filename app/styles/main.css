@@ -1,0 +1,13 @@
+.logo {
+    background: url(../images/joy.png) 0 0 no-repeat;
+}
+.list-logo {
+    background: url(../images/list_logo_jr.png) 0 0 no-repeat;
+}
+.icon-help {
+    background: url(../images/icon_help.png) 0 0 no-repeat;
+}
+div {
+    width: 200px;
+    height: 200px;
+}
